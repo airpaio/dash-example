@@ -1,0 +1,7 @@
+dash==2.1.0
+dash-bootstrap-components==1.0.3
+Flask[async]==2.1.1
+flask-oidc==1.4.0
+itsdangerous==2.0.1
+okta==2.4.0
+Werkzeug==2.0.3

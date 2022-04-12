@@ -1,0 +1,17 @@
+version: '3'
+services:
+  dash-example:
+    build:
+      context: .
+      target: dev
+    image: dash-example:dev
+    container_name: dash-example-dev
+    volumes:
+      - ./:/airpa
+      - ~/.aws/credentials:/root/.aws/credentials
+      - ~/.ssh:/root/.ssh
+    environment:
+      - APP_ENV=local
+    ports:
+      - "5000:5000"
+    working_dir: /airpa
